@@ -22,6 +22,7 @@
     "@types/enzyme": "^3.1.5",
     "@types/jest": "^21.1.8",
     "@types/mousetrap": "^1.5.34",
+    "@types/prop-types": "^15.5.2",
     "@types/react": "^16.0.30",
     "@types/react-dom": "^16.0.3",
     "awesome-typescript-loader": "^3.4.1",
@@ -47,7 +48,8 @@
     "react-dom": ">15.0.0"
   },
   "dependencies": {
-    "mousetrap": "^1.6.1"
+    "mousetrap": "^1.6.1",
+    "prop-types": "^15.5.0"
   },
   "jest": {
     "collectCoverageFrom": [

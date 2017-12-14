@@ -7,7 +7,11 @@
         "lib": ["es2015", "dom", "dom.iterable", "scripthost"],
         "outDir": "lib",
         "jsx": "react",
-        "module": "esnext"
+        "module": "esnext",
+        "baseUrl": "./",
+        "paths": {
+            "react-shortkeys": ["src/index"]
+        }
     },
     "include": [
         "src"

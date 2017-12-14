@@ -1,8 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-console.log(path.resolve('./node_modules'))
-
 module.exports = {
     entry: {
         index: path.join(__dirname, 'index'),
@@ -14,6 +12,9 @@ module.exports = {
     resolve: {
         modules: [__dirname, 'node_modules'],
         extensions: ['.tsx', '.ts', '.jsx', '.js'],
+        alias: {
+            'react-shortkeys': path.resolve('src')
+        }
     },
     module: {
         rules: [

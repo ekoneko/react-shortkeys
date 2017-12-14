@@ -21,11 +21,11 @@ import { withShortkeys, IShortkeysProps } from 'react-shortkeys'
 
 class YourComponent extends React.Component<IShortkeysProps, {}> {
     componentDidMount () {
-        this.props.shortkeys.on('a', this.pressA)
+        this.props.shortcut.on('a', this.pressA)
     }
 
     componentUnmount () {
-        this.props.shortkeys.off('a', this.pressA)
+        this.props.shortcut.off('a')
     }
 
     pressA = () => {
