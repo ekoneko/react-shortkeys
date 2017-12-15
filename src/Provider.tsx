@@ -4,17 +4,12 @@ import { Shortcut } from './Shortcut'
 
 export class ShortkeysProvider extends React.PureComponent<{}, {}> {
     static childContextTypes = {
-        shortcut: PropTypes.any
-    }
-    private shortcut: Shortcut
-
-    constructor(props, context) {
-        super(props, context)
+        shortcut: PropTypes.any,
     }
 
     getChildContext() {
-        this.shortcut = new Shortcut()
-        return { shortcut: this.shortcut }
+        const shortcut = new Shortcut()
+        return { shortcut }
     }
 
     render() {

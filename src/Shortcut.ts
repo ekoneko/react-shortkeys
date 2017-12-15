@@ -1,5 +1,4 @@
 import Mousetrap from 'mousetrap'
-import { element } from '../node_modules/@types/prop-types/index';
 
 export type IShortkeys = string | string[]
 

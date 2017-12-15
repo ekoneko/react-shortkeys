@@ -23,8 +23,8 @@ class ShortkeyButtonRaw extends React.PureComponent<IShortkeyButtonProps & IShor
         }
     }
 
-    render () {
-        const { shortkeys, shortcut, ...props } = this.props
+    render() {
+        const { shortkey, shortcut, ...props } = this.props
         return <div {...props}></div>
     }
 }
