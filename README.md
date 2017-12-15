@@ -35,7 +35,7 @@ class YourComponent extends React.Component<IShortkeysProps, {}> {
 export default withShortkeys()(YourComponent)
 ````
 
-3. Use binded button
+b. Use binded button
 
 ````tsx
 import { ShortkeyButton } from 'react-shortkeys'
