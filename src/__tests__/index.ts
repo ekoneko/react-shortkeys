@@ -1,5 +1,0 @@
-describe('index', () => {
-    it('index', () => {
-        //
-    })
-})

@@ -13,9 +13,7 @@ export class ShortkeysProvider extends React.PureComponent<{}, {}> {
     }
 
     getChildContext() {
-        // TODO: support custom elelment
-        const element = document.body
-        this.shortcut = new Shortcut(element)
+        this.shortcut = new Shortcut()
         return { shortcut: this.shortcut }
     }
 
