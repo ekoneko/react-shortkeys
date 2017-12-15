@@ -5,7 +5,6 @@ import Adapter from 'enzyme-adapter-react-16'
 import ReactTestUtils from 'react-dom/test-utils'
 import { ShortkeysProvider, withShortkeys, IShortkeysProps, ShortkeyButton } from '../index'
 
-// TODO: fix this: https://github.com/facebook/jest/issues/4545
 configure({ adapter: new Adapter() })
 
 const pressA = jest.fn()

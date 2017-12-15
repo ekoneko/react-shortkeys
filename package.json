@@ -58,6 +58,9 @@
     "testMatch": [
       "**/__tests__/**/*.ts?(x)"
     ],
+    "testPathIgnorePatterns": [
+      "shim.ts"
+    ],
     "testEnvironment": "jsdom",
     "transform": {
       "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
@@ -75,6 +78,9 @@
       "jsx",
       "ts",
       "tsx"
+    ],
+    "setupFiles": [
+      "<rootDir>/src/__tests__/shim.ts"
     ]
   },
   "repository": {
